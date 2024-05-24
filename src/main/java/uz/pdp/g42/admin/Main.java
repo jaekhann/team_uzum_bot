@@ -54,9 +54,9 @@ public class Main {
 
                     System.out.println("enter CategoryId");
                     product.setCategoryId(UUID.fromString(scannerStr.nextLine()));
-
-
                     productService.create(product);
+                    System.out.println("hello");
+                    System.out.println("Adham");
                 }
             }
         }
