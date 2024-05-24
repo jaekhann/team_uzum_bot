@@ -58,6 +58,11 @@ public class Main {
 
                     productService.create(product);
                 }
+                case 3 -> {
+                    System.out.println("Sotimov changed");
+                }
+
+
             }
         }
     }
