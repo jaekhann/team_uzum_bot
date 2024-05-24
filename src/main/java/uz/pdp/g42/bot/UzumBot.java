@@ -32,8 +32,8 @@ import uz.pdp.g42.common.service.ProductService;
 import java.util.*;
 
 public class UzumBot extends TelegramLongPollingBot {
-    private static final String USERNAME = "g42_uzum_uz_bot_azamjon_bot";
-    private static final String BOT_TOKEN = "7084546526:AAFlg7Ivu3cKjRwquwZDCxRzJgxP4oFRDOU";
+    private static final String USERNAME = "g42_team_uzum_bot";
+    private static final String BOT_TOKEN = "6811474132:AAG2INR32VKJq8vO4tdeJkeohsRquEOGGDs";
 
     FileService<Category> fileService = new FileService<>();
     CategoryDao categoryDao = new CategoryDao(fileService);
