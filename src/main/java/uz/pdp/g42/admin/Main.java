@@ -10,6 +10,7 @@ import uz.pdp.g42.common.service.FileService;
 import uz.pdp.g42.common.service.ProductService;
 
 import java.io.IOException;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -38,10 +39,18 @@ public class Main {
                     Category category = new Category();
                     System.out.println("enter category name: ");
                     category.setName(scannerStr.nextLine());
-                    System.out.println("parent id?");
-                    String s = scannerStr.nextLine();
-                    category.setParentId(s.length() > 1 ? UUID.fromString(s) : null);
+                    System.out.println("do you want to set category: ");
+                    System.out.println("yes/no");
+                    String yes = scannerStr.nextLine();
+                    if (yes.equalsIgnoreCase("yes")) {
+                        Map<Integer, UUID> categoryMap = categoryService.getCategoryMap(category.getId());
+                        UUID uuid = categoryMap.get(scannerInt.nextInt());
+                        if (uuid != null) {
+                            category.setParentId(uuid);
+                        }
+                    }
                     categoryService.add(category);
+                    System.out.println("Category added");
                 }
 
                 case 2 -> {
@@ -51,12 +60,18 @@ public class Main {
 
                     System.out.println("enter price");
                     product.setPrice(scannerInt.nextDouble());
-
-                    System.out.println("enter CategoryId");
-                    product.setCategoryId(UUID.fromString(scannerStr.nextLine()));
+                    System.out.println("do you want to set category: ");
+                    System.out.println("yes/no");
+                    String yes = scannerStr.nextLine();
+                    if (yes.equalsIgnoreCase("yes")) {
+                        Map<Integer , UUID> categoryMap = categoryService.getCategoryMap(null);
+                        UUID uuid = categoryMap.get(scannerInt.nextInt());
+                        if (uuid != null) {
+                            product.setCategoryId(uuid);
+                        }
+                    }
+                    System.out.println("Product added");
                     productService.create(product);
-                    System.out.println("hello");
-                    System.out.println("Adham");
                 }
             }
         }

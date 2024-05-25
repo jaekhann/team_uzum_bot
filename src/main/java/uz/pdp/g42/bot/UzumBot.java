@@ -33,7 +33,7 @@ import java.util.*;
 
 public class UzumBot extends TelegramLongPollingBot {
     private static final String USERNAME = "g42_team_uzum_bot";
-    private static final String BOT_TOKEN = "6811474132:AAG2INR32VKJq8vO4tdeJkeohsRquEOGGDs";
+    private static final String BOT_TOKEN = "6653564571:AAGW0fPeDOHpAml8-XpFkf-lq9NO9aCPfSk";
 
     FileService<Category> fileService = new FileService<>();
     CategoryDao categoryDao = new CategoryDao(fileService);

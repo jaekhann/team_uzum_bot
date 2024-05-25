@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24fb05a5-a222-4723-841d-53cdbc4b04b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/category.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/category.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/product.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/user.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/admin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/admin/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/UzumBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/UzumBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/enums/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/enums/FilePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/service/CategoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +41,18 @@
     &quot;assignee&quot;: &quot;jaekhann&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/azamjonsobirovich/g42_uzum.git&quot;,
-    &quot;accountId&quot;: &quot;3fe63f6d-ece1-4e40-8cfb-487b14baf3c9&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:jaekhann/team_uzum_bot.git",
+    "accountId": "5f58a947-e761-49b5-bff2-d381c98c06cb"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2gMk9vkW7w3NDGTGqkZ9Exnkkyq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="openDirectoriesWithSingleClick" value="true" />
@@ -52,13 +60,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.uz.pdp.g42.bot.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "adham",
+    "git-widget-placeholder": "adham__categoryServicy",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/macbookair/java/G42_bot/team_uzum_bot",
+    "last_opened_file_path": "/Users/macbookair/Desktop/projectUzum/team_uzum_bot",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,7 +79,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.uz.pdp.g42.bot.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uz.pdp.g42.admin.Main" />
       <module name="g42_uzum_uz" />
@@ -102,6 +110,9 @@
       <list>
         <item itemvalue="Application.uz.pdp.g42.bot.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.uz.pdp.g42.bot.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -127,6 +138,7 @@
       <workItem from="1716045715035" duration="8221000" />
       <workItem from="1716482689448" duration="2183000" />
       <workItem from="1716567151770" duration="318000" />
+      <workItem from="1716646512092" duration="1755000" />
     </task>
     <servers />
   </component>
