@@ -74,6 +74,7 @@ public class Main {
                     productService.create(product);
                 }
             }
+            System.out.println("test pull request");
         }
     }
 }
