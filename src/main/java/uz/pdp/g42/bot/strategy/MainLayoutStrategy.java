@@ -2,6 +2,7 @@ package uz.pdp.g42.bot.strategy;
 
 import lombok.RequiredArgsConstructor;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageMedia;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageReplyMarkup;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -39,6 +40,11 @@ public class MainLayoutStrategy extends TelegramBotStrategy {
 
     @Override
     public EditMessageReplyMarkup execute(CallbackQuery update) throws IOException, TelegramApiException {
+        return null;
+    }
+
+    @Override
+    public EditMessageMedia execute(CallbackQuery update, String data) {
         return null;
     }
 

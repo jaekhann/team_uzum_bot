@@ -6,6 +6,6 @@ import java.util.UUID;
 
 public interface BaseDao<T> {
     void create(T t) throws IOException;
-    T getById(UUID id);
+    T getById(UUID id) throws IOException;
     List<T> list() throws IOException;
 }

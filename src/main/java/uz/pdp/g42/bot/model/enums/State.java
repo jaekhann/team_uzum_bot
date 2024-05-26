@@ -10,8 +10,8 @@ public enum State {
     CATEGORY("category"),
     CHILD_CATEGORY("child_category"),
     PRODUCT("product"),
+    PRODUCT_ORDER("productOrder"),
     BASKET("basket");
-
 
     private final String step;
 }

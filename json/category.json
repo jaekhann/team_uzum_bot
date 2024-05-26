@@ -1,1 +1,11 @@
-[{"name":"market","id":"495efc33-d5c7-4a9b-bc3b-60f7b1a5901c"},{"name":"fruits","parentId":"495efc33-d5c7-4a9b-bc3b-60f7b1a5901c","id":"82dae637-344b-4688-bdef-ae0dcde7acba"}]
+[
+  {
+    "id": "495efc33-d5c7-4a9b-bc3b-60f7b1a5901c",
+    "name": "market"
+  },
+  {
+    "id": "82dae637-344b-4688-bdef-ae0dcde7acba",
+    "name": "fruits",
+    "parentId": "495efc33-d5c7-4a9b-bc3b-60f7b1a5901c"
+  }
+]

@@ -20,7 +20,15 @@ public class CategoryDao implements BaseDao<Category>{
     }
 
     @Override
-    public Category getById(UUID id) {
+    public Category getById(UUID id) throws IOException {
+        List<Category> list = list();
+
+         for (Category category: list) {
+             if (category != null && category.getId().equals(id)) {
+                 return category;
+             }
+         }
+
         return null;
     }
 

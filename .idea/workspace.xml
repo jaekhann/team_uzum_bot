@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24fb05a5-a222-4723-841d-53cdbc4b04b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="d73cf8c8-f496-48a5-b321-b09e57d9e9b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/service/ProductSendPhotoButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/strategy/ProductSendPhotoStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/strategy/enums/CallBackDataEnums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/category.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/category.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/product.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/admin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/admin/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/UzumBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/UzumBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/model/enums/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/model/enums/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/strategy/CategoryStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/strategy/CategoryStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/strategy/ChildCategoryStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/strategy/ChildCategoryStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/strategy/MainLayoutStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/strategy/MainLayoutStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/strategy/TelegramBotStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/strategy/TelegramBotStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/ProductDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/enums/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/enums/FilePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/model/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +52,12 @@
     &quot;assignee&quot;: &quot;jaekhann&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:jaekhann/team_uzum_bot.git",
-    "accountId": "5f58a947-e761-49b5-bff2-d381c98c06cb"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:jaekhann/team_uzum_bot.git&quot;,
+    &quot;accountId&quot;: &quot;5f58a947-e761-49b5-bff2-d381c98c06cb&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -61,25 +72,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "Application.uz.pdp.g42.bot.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "adham__categoryServicy",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/macbookair/Desktop/projectUzum/team_uzum_bot",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+    "Application.uz.pdp.g42.bot.Main.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.uz.pdp.g42.bot.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uz.pdp.g42.admin.Main" />
       <module name="g42_uzum_uz" />
@@ -116,14 +114,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -144,6 +134,20 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/UzumBot.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

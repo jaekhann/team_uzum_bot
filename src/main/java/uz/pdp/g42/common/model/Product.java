@@ -14,4 +14,5 @@ public class Product extends BaseModel {
     private int quantity;
     private double price;
     private UUID categoryId;
+    private String urlPhoto;
 }

@@ -20,7 +20,15 @@ public class ProductDao implements BaseDao<Product>{
     }
 
     @Override
-    public Product getById(UUID id) {
+    public Product getById(UUID id) throws IOException {
+        List<Product> list = list();
+
+        for (Product product : list) {
+            if (product != null && product.getId().equals(id)) {
+                return product;
+            }
+        }
+
         return null;
     }
 

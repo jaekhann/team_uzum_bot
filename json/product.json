@@ -1,1 +1,10 @@
-[{"name":"applr","quantity":0,"price":2.0,"categoryId":"82dae637-344b-4688-bdef-ae0dcde7acba","id":"0c0de351-bacc-4bc3-8e2d-3bc995dd8116"}]
+[
+  {
+    "categoryId": "82dae637-344b-4688-bdef-ae0dcde7acba",
+    "id": "0c0de351-bacc-4bc3-8e2d-3bc995dd8116",
+    "name": "apple",
+    "price": 2.0,
+    "quantity": 0,
+    "urlPhoto": "https://www.shutterstock.com/ru/image-photo/red-apple-isolated-on-white-background-1727544364"
+  }
+]

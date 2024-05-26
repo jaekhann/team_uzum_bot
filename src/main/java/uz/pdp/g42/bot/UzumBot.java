@@ -1,25 +1,14 @@
 package uz.pdp.g42.bot;
 
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageReplyMarkup;
-import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
-import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboard;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
-import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import uz.pdp.g42.bot.model.User;
 import uz.pdp.g42.bot.model.enums.State;
 import uz.pdp.g42.bot.service.InlineMarkupService;
+import uz.pdp.g42.bot.service.ProductSendPhotoButton;
 import uz.pdp.g42.bot.service.UserService;
-import uz.pdp.g42.bot.strategy.CategoryStrategy;
-import uz.pdp.g42.bot.strategy.ChildCategoryStrategy;
-import uz.pdp.g42.bot.strategy.MainLayoutStrategy;
-import uz.pdp.g42.bot.strategy.TelegramBotStrategy;
+import uz.pdp.g42.bot.strategy.*;
 import uz.pdp.g42.common.dao.CategoryDao;
 import uz.pdp.g42.common.dao.ProductDao;
 import uz.pdp.g42.common.dao.UserDao;
@@ -33,7 +22,7 @@ import java.util.*;
 
 public class UzumBot extends TelegramLongPollingBot {
     private static final String USERNAME = "g42_team_uzum_bot";
-    private static final String BOT_TOKEN = "6653564571:AAGW0fPeDOHpAml8-XpFkf-lq9NO9aCPfSk";
+    private static final String BOT_TOKEN = "6811474132:AAG2INR32VKJq8vO4tdeJkeohsRquEOGGDs";
 
     FileService<Category> fileService = new FileService<>();
     CategoryDao categoryDao = new CategoryDao(fileService);
@@ -49,6 +38,7 @@ public class UzumBot extends TelegramLongPollingBot {
     UserDao userDao = new UserDao(userFileService);
     UserService userService = new UserService(userDao);
 
+    ProductSendPhotoButton productSendPhotoButton = new ProductSendPhotoButton(productDao);
 
     static Map<State, TelegramBotStrategy> strategyMap = new HashMap<>();
 
@@ -62,6 +52,10 @@ public class UzumBot extends TelegramLongPollingBot {
                         productInlineMarkupService,
                         userService)
         );
+        strategyMap.put(State.PRODUCT_ORDER,
+                new ProductSendPhotoStrategy(productDao,
+                        userService,
+                        productSendPhotoButton));
     }
 
 
@@ -77,7 +71,14 @@ public class UzumBot extends TelegramLongPollingBot {
                 }
             }
             else if (update.hasCallbackQuery()) {
-                execute(strategyMap.get(State.CHILD_CATEGORY).execute(update.getCallbackQuery()));
+                String data = update.getCallbackQuery().getData();
+                if (data.length() > 25 && categoryDao.getById(UUID.fromString(data)) != null) {
+                    execute(strategyMap.get(State.CHILD_CATEGORY).execute(update.getCallbackQuery()));
+                } else {
+                    execute(strategyMap.get(State.PRODUCT_ORDER).execute(update.getCallbackQuery(), update.getCallbackQuery().getData()));
+                }
+
+
             }
         }catch (Exception e) {
             e.printStackTrace();
