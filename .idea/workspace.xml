@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24fb05a5-a222-4723-841d-53cdbc4b04b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/category.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/category.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/product.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/user.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/admin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/admin/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/UzumBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/bot/UzumBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/enums/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/dao/enums/FilePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uz/pdp/g42/common/service/CategoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +33,12 @@
     &quot;assignee&quot;: &quot;jaekhann&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:jaekhann/team_uzum_bot.git",
-    "accountId": "5f58a947-e761-49b5-bff2-d381c98c06cb"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:jaekhann/team_uzum_bot.git&quot;,
+    &quot;accountId&quot;: &quot;5f58a947-e761-49b5-bff2-d381c98c06cb&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -64,7 +56,7 @@
     "Application.uz.pdp.g42.bot.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "adham__categoryServicy",
+    "git-widget-placeholder": "adham__test",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/macbookair/Desktop/projectUzum/team_uzum_bot",
     "node.js.detected.package.eslint": "true",
@@ -75,7 +67,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -139,6 +131,7 @@
       <workItem from="1716482689448" duration="2183000" />
       <workItem from="1716567151770" duration="318000" />
       <workItem from="1716646512092" duration="1755000" />
+      <workItem from="1716705254127" duration="487000" />
     </task>
     <servers />
   </component>
